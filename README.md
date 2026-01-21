@@ -117,3 +117,16 @@ Após a build, o client gera a pasta `dist`, que é servida pelo servidor.
 - **routes** – definição das rotas do projeto
 - **types** – tipagens utilizadas no servidor
 - **utils** – funções utilitárias, como tratamento de erros (ex: `ApiError`)
+
+### Aplicação
+
+Usuários cadastrados:
+
+- Email:
+caio@email.com
+fred@email.com
+eduardo@email.com
+geovana@email.com
+carlos@email.com
+
+- Senha: 123456
