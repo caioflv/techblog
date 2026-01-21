@@ -1,4 +1,4 @@
-const BASE_URL = "http://192.168.0.110:3333/api"
+const BASE_URL = "http://localhost:3333/api"
 const SESSIONS_PATH = "sessions"
 const USERS_PATH = "users"
 const FEED_PATH = "feed"

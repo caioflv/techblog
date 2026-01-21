@@ -44,7 +44,7 @@ body {
 	height: 100%;
 
 	margin: 0 auto;
-	width: calc(100% - 2rem);
+	width: calc(23.4375rem - 2rem);
 
 	font: var(--text-sm);
 	color: black;
@@ -56,4 +56,10 @@ body {
 #root {
 	min-height: 100dvh;
 	height: 100%;
+}
+
+@media (width >= 80em) {
+	body {
+		width: 40rem;
+	}
 }
