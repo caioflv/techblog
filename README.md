@@ -14,7 +14,32 @@ Abra o terminal na pasta **server** e execute:
 npm run dev
 ```
 
-Após isso, o servidor estará rodando e irá **prover os arquivos da pasta `dist`**, que fica dentro da pasta **client**.
+Após isso, o servidor estará rodando em **localhost:3333** e irá **prover os arquivos da pasta `dist`**, que fica dentro da pasta **client**.
+
+## Rodando em um dispositivo móvel na mesma rede
+
+1. No projeto, acesse a pasta:
+
+   ```
+   client/src/services
+   ```
+
+2. Abra o arquivo `configs.ts` e altere a `baseURL` de:
+
+   ```
+   http://localhost:3333
+   ```
+
+   para o **IP local da máquina na rede**, por exemplo:
+
+   ```
+   http://192.168.0.15:3333
+   ```
+
+3. Inicie o servidor e, no celular, acesse:
+   ```
+   http://IP_DA_MAQUINA_LOCAL:3333
+   ```
 
 ---
 
