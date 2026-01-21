@@ -18,28 +18,13 @@ Após isso, o servidor estará rodando em **localhost:3333** e irá **prover os 
 
 ## Rodando em um dispositivo móvel na mesma rede
 
-1. No projeto, acesse a pasta:
+1. No projeto, acesse a pasta:  `client/src/services`
 
-   ```
-   client/src/services
-   ```
+2. Abra o arquivo `configs.ts` e altere a `baseURL` de: `http://localhost:3333`
 
-2. Abra o arquivo `configs.ts` e altere a `baseURL` de:
+   para o **IP local da máquina na rede**, por exemplo: `http://192.168.0.15:3333`
 
-   ```
-   http://localhost:3333
-   ```
-
-   para o **IP local da máquina na rede**, por exemplo:
-
-   ```
-   http://192.168.0.15:3333
-   ```
-
-3. Inicie o servidor e, no celular, acesse:
-   ```
-   http://IP_DA_MAQUINA_LOCAL:3333
-   ```
+3. Inicie o servidor e, no celular, acesse: `http://IP_DA_MAQUINA_LOCAL:3333`
 
 ---
 
@@ -123,10 +108,10 @@ Após a build, o client gera a pasta `dist`, que é servida pelo servidor.
 Usuários cadastrados:
 
 - Email:
-caio@email.com
+`caio@email.com
 fred@email.com
 eduardo@email.com
 geovana@email.com
-carlos@email.com
+carlos@email.com`
 
 - Senha: 123456
