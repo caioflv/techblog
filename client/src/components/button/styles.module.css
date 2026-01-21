@@ -1,0 +1,35 @@
+.button {
+	box-sizing: border-box;
+
+	display: flex;
+	flex-direction: row;
+	gap: 0.25rem;
+	justify-content: center;
+	align-items: center;
+
+	height: 2.5rem;
+	width: fit-content;
+	padding-inline: 1rem;
+
+	background-color: rgb(96, 158, 55);
+	border-radius: 0.5rem;
+
+	color: white;
+	font: var(--text-md);
+}
+
+.animation {
+	animation: 0.25s OnClick 0s forwards;
+}
+
+@keyframes OnClick {
+	33% {
+		scale: 0.85;
+	}
+	66% {
+		scale: 1.1;
+	}
+	100% {
+		scale: 1;
+	}
+}

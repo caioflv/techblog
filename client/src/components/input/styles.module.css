@@ -1,0 +1,12 @@
+.input {
+	box-sizing: border-box;
+
+	height: 3rem;
+	width: 100%;
+	padding-inline: 1rem;
+
+	background-color: var(--color-secondary);
+	border-radius: 0.5rem;
+
+	font: var(--text-md);
+}

@@ -1,0 +1,38 @@
+{
+	"name": "learn-api",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "tsx watch --clear-screen=false src/server.ts",
+		"knex": "node --import tsx ./node_modules/knex/bin/cli.js",
+		"build": "tsc",
+		"start": "node dist/server.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"type": "commonjs",
+	"dependencies": {
+		"bcrypt": "^6.0.0",
+		"cors": "^2.8.5",
+		"dotenv": "^17.2.3",
+		"express": "^5.1.0",
+		"express-rate-limit": "^8.2.1",
+		"jsonwebtoken": "^9.0.2",
+		"knex": "^3.1.0",
+		"knex-stringcase": "^1.5.5",
+		"sqlite3": "^5.1.7",
+		"zod": "^4.1.12"
+	},
+	"devDependencies": {
+		"@types/bcrypt": "^6.0.0",
+		"@types/cors": "^2.8.19",
+		"@types/express": "^5.0.5",
+		"@types/jsonwebtoken": "^9.0.10",
+		"@types/node": "^24.10.0",
+		"@types/sqlite3": "^3.1.11",
+		"tsx": "^4.20.6",
+		"typescript": "^5.9.3"
+	}
+}

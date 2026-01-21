@@ -1,0 +1,59 @@
+:where(*, *::after, *::before) {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--ff-body: "Funnel Sans", sans-serif;
+
+	--text-title: 600 2.75rem/3rem var(--ff-body);
+
+	--text-label-lg: 700 1.25rem/1.25rem var(--ff-body);
+	--text-label-md: 700 1.15rem/1.15rem var(--ff-body);
+
+	--text-md: 400 1rem/1.15rem var(--ff-body);
+	--text-sm: 400 0.875rem/1rem var(--ff-body);
+	--text-mn: 400 0.75rem/1rem var(--ff-body);
+
+	--color-primary: whitesmoke;
+	--color-secondary: rgb(224, 231, 221);
+}
+
+button,
+input,
+a {
+	all: unset;
+	cursor: pointer;
+	-webkit-appearance: none;
+	appearance: none;
+	user-select: none;
+	-webkit-tap-highlight-color: transparent;
+	background: transparent;
+}
+
+html {
+	height: 100%;
+	width: 100%;
+
+	background-color: whitesmoke;
+}
+
+body {
+	min-height: 100dvh;
+	height: 100%;
+
+	margin: 0 auto;
+	width: calc(100% - 2rem);
+
+	font: var(--text-sm);
+	color: black;
+
+	overflow-y: auto;
+	/* overflow-x: hidden; */
+}
+
+#root {
+	min-height: 100dvh;
+	height: 100%;
+}

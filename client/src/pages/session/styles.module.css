@@ -1,0 +1,36 @@
+.form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	height: 100%;
+	margin-block: auto;
+
+	padding-block: 2rem;
+
+	gap: 1.75rem;
+}
+
+.form h1 {
+	text-align: center;
+}
+
+.inputWrapper {
+	display: flex;
+	flex-direction: column;
+
+	gap: 0.5rem;
+}
+
+.tags {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+
+	gap: 0.25rem;
+}
+
+.submitBtn {
+	width: 100%;
+}

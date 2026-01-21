@@ -1,0 +1,26 @@
+.button {
+	box-sizing: border-box;
+
+	display: flex;
+	flex-direction: row;
+	gap: 0.25rem;
+	justify-content: center;
+	align-items: center;
+
+	height: 2.5rem;
+	width: fit-content;
+	padding-inline: 1rem;
+
+	background-color: transparent;
+	border-radius: 0.5rem;
+
+	color: black;
+	font: var(--text-sm);
+}
+
+.disabled {
+	font-weight: 700;
+	background-color: var(--color-secondary);
+
+	border-radius: 50%;
+}

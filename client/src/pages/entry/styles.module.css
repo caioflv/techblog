@@ -1,0 +1,21 @@
+.main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+
+	margin: auto;
+
+	text-align: center;
+
+	width: 65%;
+}
+
+.main > p {
+	font: var(--text-md);
+}
+
+.main > h1 {
+	font: var(--text-title);
+}

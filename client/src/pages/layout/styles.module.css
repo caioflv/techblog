@@ -1,0 +1,22 @@
+.page {
+	display: flex;
+	flex-direction: column;
+
+	min-height: 100%;
+	width: 100%;
+
+	padding-block: 0.25rem;
+
+	gap: 1rem;
+}
+.main {
+	flex: 1;
+
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+}
+
+.footer {
+	height: 3rem;
+}
