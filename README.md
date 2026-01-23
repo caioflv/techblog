@@ -1,117 +1,123 @@
-# Projeto
+# Project
 
-Este projeto é dividido em **server** e **client**.
+This project is divided into **server** and **client**.
 
 ---
 
-## Como rodar o projeto
+## How to run the project
 
-### Rodando o servidor
+### Running the server
 
-Abra o terminal na pasta **server** e execute:
+Open a terminal in the **server** folder and run:
 
 ```bash
 npm run dev
 ```
 
-Após isso, o servidor estará rodando em **localhost:3333** e irá **prover os arquivos da pasta `dist`**, que fica dentro da pasta **client**.
-
-## Rodando em um dispositivo móvel na mesma rede
-
-1. No projeto, acesse a pasta:  `client/src/services`
-
-2. Abra o arquivo `configs.ts` e altere a `baseURL` de: `http://localhost:3333`
-
-   para o **IP local da máquina na rede**, por exemplo: `http://192.168.0.15:3333`
-
-3. Inicie o servidor e, no celular, acesse: `http://IP_DA_MAQUINA_LOCAL:3333`
+After that, the server will be running at **localhost:3333** and will **serve the files from the `dist` folder**, which is located inside the **client** folder.
 
 ---
 
-### Atualizando o client
+## Running on a mobile device on the same network
 
-Sempre que houver qualquer modificação no código do **client**, é necessário gerar novamente a build.
+1. In the project, go to the folder: `client/src/services`
 
-Abra o terminal na pasta **client** e execute:
+2. Open the file `configs.ts` and change the `baseURL` from `http://localhost:3333`
+
+   to the **local IP address of the machine on the network**, for example:  
+   `http://192.168.0.15:3333`
+
+3. Start the server and, on your mobile device, access:  
+   `http://LOCAL_MACHINE_IP:3333`
+
+---
+
+### Updating the client
+
+Whenever there is any change in the **client** code, it is necessary to generate a new build.
+
+Open a terminal in the **client** folder and run:
 
 ```bash
 npm run build
 ```
 
-Isso atualiza a pasta `dist`, permitindo que o servidor sirva a versão mais recente do projeto.
+This updates the `dist` folder, allowing the server to serve the most recent version of the project.
 
 ---
 
-## Arquitetura do projeto
+## Project architecture
 
-O projeto consiste em uma **API Node.js** com um banco de dados **SQLite**.
+The project consists of a **Node.js API** with a **SQLite** database.
 
-O SQLite foi escolhido pela sua **simplicidade e praticidade**, sendo suficiente para o escopo deste teste e facilitando a execução local do projeto sem dependências externas.
-
----
-
-### Servidor
-
-O servidor é uma **API Node.js** que trabalha com **Content-Type JSON**.
-
-Principais tecnologias utilizadas:
-
-- **Node.js**
-- **SQLite**
-- **Knex** para conexão com o banco de dados
-  - Migrations
-  - Seeds
-- **Zod** para validação e tipagem de dados
-- **bcrypt** para encriptação de senhas
-- **JSON Web Token (JWT)** para autenticação de usuários
-
-Toda a comunicação entre client e server é feita via JSON.
-
----
-
-### Client
-
-O client foi desenvolvido em **React**, utilizando o **Vite** para criação e build do projeto.
-
-Também é utilizado **TypeScript**, com o objetivo de manter uma tipagem mais segura e organizada.
-
-Após a build, o client gera a pasta `dist`, que é servida pelo servidor.
-
----
-
-## Estrutura do projeto
-
-### Client (`src`)
-
-- **components** – componentes reutilizáveis da interface
-- **contexts** – contextos globais da aplicação
-- **hooks** – hooks customizados
-- **pages** – páginas da aplicação
-- **routes** – definição das rotas
-- **services** – comunicação com a API
-- **types** – tipagens e interfaces TypeScript
+SQLite was chosen for its **simplicity and practicality**, being sufficient for the scope of this test and making it easier to run the project locally without external dependencies.
 
 ---
 
 ### Server
 
-- **configs** – configurações gerais do projeto
-- **controllers** – controle das requisições e comunicação com o banco
-- **database** – configurações do banco, migrations e seeds
-- **middlewares** – middlewares da aplicação
-- **routes** – definição das rotas do projeto
-- **types** – tipagens utilizadas no servidor
-- **utils** – funções utilitárias, como tratamento de erros (ex: `ApiError`)
+The server is a **Node.js API** that works with **JSON Content-Type**.
 
-### Aplicação
+Main technologies used:
 
-Usuários cadastrados:
+- **Node.js**
+- **SQLite**
+- **Knex** for database connection
+  - Migrations
+  - Seeds
+- **Zod** for data validation and typing
+- **bcrypt** for password encryption
+- **JSON Web Token (JWT)** for user authentication
+
+All communication between client and server is done via JSON.
+
+---
+
+### Client
+
+The client was developed using **React**, with **Vite** for project creation and build.
+
+**TypeScript** is also used to maintain safer and more organized typing.
+
+After the build process, the client generates the `dist` folder, which is served by the server.
+
+---
+
+## Project structure
+
+### Client (`src`)
+
+- **components** – reusable UI components
+- **contexts** – global application contexts
+- **hooks** – custom hooks
+- **pages** – application pages
+- **routes** – route definitions
+- **services** – API communication
+- **types** – TypeScript types and interfaces
+
+---
+
+### Server
+
+- **configs** – general project configurations
+- **controllers** – request handling and database communication
+- **database** – database configuration, migrations, and seeds
+- **middlewares** – application middlewares
+- **routes** – project route definitions
+- **types** – server-side typings
+- **utils** – utility functions, such as error handling (e.g. `ApiError`)
+
+---
+
+### Application
+
+Registered users:
 
 - Email:
-`caio@email.com
-fred@email.com
-eduardo@email.com
-geovana@email.com
+  `caio@email.com  
+fred@email.com  
+eduardo@email.com  
+geovana@email.com  
 carlos@email.com`
 
-- Senha: 123456
+- Password: `123456`
