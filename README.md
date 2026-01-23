@@ -121,3 +121,7 @@ geovana@email.com
 carlos@email.com`
 
 - Password: `123456`
+
+## Screenshots
+
+![App](screenshot.webp)
