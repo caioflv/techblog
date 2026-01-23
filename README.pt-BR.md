@@ -18,7 +18,7 @@ Após isso, o servidor estará rodando em **localhost:3333** e irá **prover os 
 
 ## Rodando em um dispositivo móvel na mesma rede
 
-1. No projeto, acesse a pasta:  `client/src/services`
+1. No projeto, acesse a pasta: `client/src/services`
 
 2. Abra o arquivo `configs.ts` e altere a `baseURL` de: `http://localhost:3333`
 
@@ -108,10 +108,14 @@ Após a build, o client gera a pasta `dist`, que é servida pelo servidor.
 Usuários cadastrados:
 
 - Email:
-`caio@email.com
+  `caio@email.com
 fred@email.com
 eduardo@email.com
 geovana@email.com
 carlos@email.com`
 
 - Senha: 123456
+
+## Screenshots
+
+![App](screenshot.webp)
