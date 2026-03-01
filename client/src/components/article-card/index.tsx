@@ -26,7 +26,7 @@ export function ArticleCard({ article, allowEdit }: Props) {
 	}
 
 	return (
-		<button onClick={openArticle} className={styles.articlePreview}>
+		<div onClick={openArticle} className={styles.articlePreview}>
 			<img
 				src={article.imageUrl.replace("id", String(article.ownerId))}
 				alt=""
@@ -58,6 +58,6 @@ export function ArticleCard({ article, allowEdit }: Props) {
 
 				<p>{slicedArticle}...</p>
 			</div>
-		</button>
+		</div>
 	)
 }

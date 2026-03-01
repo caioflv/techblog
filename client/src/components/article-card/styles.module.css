@@ -1,6 +1,7 @@
 .articlePreview {
 	all: unset;
 	box-sizing: border-box;
+	cursor: pointer;
 
 	display: flex;
 	flex-direction: row;
